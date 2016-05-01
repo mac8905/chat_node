@@ -21,3 +21,4 @@ Step By Step:
 9. npm install method-override
 10. npm install angular-ui-bootstrap
 11. npm install socket.io --save
+12. bower install angular-socket-io

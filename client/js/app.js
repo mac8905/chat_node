@@ -2,9 +2,9 @@ var myApp = angular.module('myApp', [
     'ngRoute',
     'ui.bootstrap',
     'ngResource',
-    'ngAnimate'
-    /*'btford.socket-io'*/])
-    .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
+    'ngAnimate',
+    'btford.socket-io']).
+    config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
         
         //typical routes... when someone navigates to a given directory, load the partial, and use the controller
         $routeProvider.when('/home', {templateUrl: '/partials/home.html', controller: 'homeController'});
@@ -18,8 +18,9 @@ var myApp = angular.module('myApp', [
         //new comment
         $locationProvider.html5Mode({enabled: true, requireBase: false});
     }])
-    .filter('startFrom', function(){ // for pagination
+    .filter('startFrom', function(){
         return function(data, start){
             return data.slice(start);
         }
     });
+    
