@@ -1,0 +1,21 @@
+{
+  "name": "chat_node",
+  "description": "Chat Network Security",
+  "main": "server.js",
+  "authors": [
+    "Miguel Caro <mac8905@hotmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "chat",
+    "chat_node",
+    "chat",
+    "encrypt"
+  ],
+  "homepage": "https://github.com/mac8905/chat_node",
+  "dependencies": {
+  },
+  "install": {
+    "path": "client/lib"
+  }
+}
